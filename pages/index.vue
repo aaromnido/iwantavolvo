@@ -2,7 +2,13 @@
   <section class="container">
     <section class="hero" id="hero">
       <Header/>
-      <h1>Hero section</h1>
+      <div class="wrapper">
+        <div class="cta">
+          <nuxt-link to="#" class="button button-primary">
+            <img src="~assets/img/icon-logo.svg" /> Quiero un Volvo
+          </nuxt-link>
+        </div>
+      </div>
     </section>
     <Footer/>
   </section>

@@ -21,6 +21,22 @@ h1, h2, h3, h4, h5, h6, p, small, strong, li, a
 a
   transition: all .4s ease-out
 
+/* HELPERS */
+.button
+  background: $black
+  color: white
+  text-decoration: none
+  text-transform: uppercase
+  display: inline-block
+  padding: 1rem 1.5rem
+  font-weight: 200
+  letter-spacing: 1px
+  &:hover,
+  &.button-primary
+    background: $red
+    &:hover
+      background: $black
+
 /* LAYOUT */
 /* HEADER */
 .header
@@ -69,4 +85,18 @@ a
   background-position: center left
   background-size: cover
   min-height: 678px
-  text-align: center
+  .wrapper
+    min-height: 568px
+    display: flex
+    justify-content: flex-end
+    flex-direction: column
+    align-items: center
+  .cta
+    margin-bottom: -1.8rem
+    .button
+      padding: 12px 1.2rem
+      font-size: 21px
+      img
+        vertical-align: middle
+        margin-right: 0.5rem
+
