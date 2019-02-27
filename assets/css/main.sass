@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700')
+
+/* COLORS */
+$red: #FF273D
+$black: #121E25
+$wrapper-centered: 900px
+
+/* FONT */
+$font-family: 'Montserrat', sans-serif
+
+
+body
+  color: $black
+  font-family: $font-family
+  font-size: 14px
+  padding: 0
+
+h1, h2, h3, h4, h5, h6, p, small, strong, li, a
+  margin-top: 0
+
+a
+  transition: all .4s ease-out
+
+/* LAYOUT */
+/* HEADER */
+.header
+  margin: 0 40px
+  z-index: 10
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 2rem 1rem
+  border-bottom: 1px solid white
+  .main-nav
+
+    a
+      display: inline-block
+      margin: 0
+      text-decoration: none
+      color: white
+      font-weight: 200
+
+      &:last-child
+        margin-right: 0
+
+      &:hover
+        background: $red
+
+      /*media only screen and (max-width : 767px)*/
+      /*media only screen and (max-width : 480x)*/
+    @media only screen and (max-width : 900px)
+      margin-top: 3rem
+      font-size: 1.2rem
+      background: transparentize($black, 0.8)
+      border-top: 2px solid white
+      border-bottom: 2px solid white
+      padding: .5rem 2rem
+      a
+       display: block
+       padding: .5rem 1rem
+
+  @media only screen and (max-width : 900px)
+    flex-direction: column
+    border: none
+
+/* HERO */
+.hero
+  background: url("~assets/img/hero-cover.jpg")
+  background-position: center left
+  background-size: cover
+  min-height: 678px
+  text-align: center
